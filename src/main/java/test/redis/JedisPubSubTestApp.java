@@ -9,6 +9,9 @@ import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
 /**
+ * 
+ * 
+ * 
  * @author lij
  * @version <b>1.0</b>
  */
@@ -17,7 +20,7 @@ public class JedisPubSubTestApp {
 	public static void main(String[] args) {
 		final JedisPubSubTestApp jedisPoolTest = new JedisPubSubTestApp();
 		/**
-		 * �߳��������������
+		 * 
 		 */
 		new Thread() {
 			public void run() {
@@ -35,7 +38,7 @@ public class JedisPubSubTestApp {
 		}.start();
 		System.out.println("test!!!");
 		
-		//���������߳�
+
 		new RevThread().start();
 	}
 
@@ -49,7 +52,6 @@ public class JedisPubSubTestApp {
 	int i=0;
 	
 	/**
-	 * ������Ϣ
 	 */
 	private void send() {
 		i++;
